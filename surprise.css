@@ -1,0 +1,91 @@
+
+:root {
+  /* direct messages hap icon */
+  --discord-icon: none; /* discord icon */
+  --custom-icon: block; /* hap icon */
+  --custom-icon-url: url('https://i.imgur.com/CsE9KLs.png'); /* put whatever but pretty sure it ain't working, janky */
+
+  --moon-spin-transition: 0.4s ease;
+
+
+} 
+
+/* Custom DM button hap icon */
+.childWrapper__6e9f8 > svg:not(.favoriteIcon_c9fddf) {
+display: var(--discord-icon);
+}
+.childWrapper__6e9f8:has(> svg:not(.favoriteIcon_c9fddf))::before {
+content: '';
+display: var(--custom-icon);
+position: absolute;
+width: 100%;
+height: 100%;
+background-image: var(--custom-icon-url);
+background-size: contain !important;
+background-repeat: no-repeat;
+background-position: center;
+background-color: transparent; /* Ensure transparency */
+transition: transform var(--moon-spin-transition); /* Only rotate, no color change */
+border: none; /* Ensure no border is applied */
+box-shadow: none; /* Remove any shadow effects */
+}
+.wrapper__6e9f8:hover .childWrapper__6e9f8::before {
+background-color: transparent !important; /* Keep it transparent */
+border: none !important; /* No border */
+box-shadow: none !important; /* No shadow */
+transform: rotate(360deg) scale(1); /* Rotate the icon */
+}
+.wrapper__6e9f8.selected__6e9f8 > .childWrapper__6e9f8::before {
+transform: rotate(-360deg) scale(0.8);
+background-color: transparent !important; /* Ensure transparency */
+}
+/* Ensure no fking white square appears */
+.childWrapper__6e9f8::before {
+background-color: transparent !important; /* No background color */
+border: none !important; /* No border */
+box-shadow: none !important; /* No shadow */
+}
+
+
+.tutorialContainer__1f388 .wrapper__8436d,
+.tutorialContainer__1f388 .svg_cc5dd2 {
+height: 57px;
+width: 48px;
+-webkit-animation-name: y-spin;
+animation-name: y-spin;
+-webkit-animation-duration: 6s;
+animation-duration: 6s;
+-webkit-animation-timing-function: ease-in-out;
+animation-timing-function: ease-in-out;
+-webkit-animation-iteration-count: infinite;
+animation-iteration-count: infinite;
+}
+
+.tutorialContainer__1f388 .wrapper__8436d foreignobject svg *,
+.tutorialContainer__1f388 .svg_cc5dd2 foreignobject svg * {
+fill: none !important;
+}
+
+@-webkit-keyframes y-spin {
+0% {
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+
+100% {
+-webkit-transform: rotateY(360deg);
+transform: rotateY(360deg);
+}
+}
+
+@keyframes y-spin {
+0% {
+-webkit-transform: rotateY(0deg);
+transform: rotateY(0deg);
+}
+
+100% {
+-webkit-transform: rotateY(360deg);
+transform: rotateY(360deg);
+}
+}

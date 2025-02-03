@@ -1,0 +1,25 @@
+:root {
+  /* Define the corner text variable */
+  --corner-text: '@SneshCorp';
+}
+
+.container_c48ade::before {
+  content: var(--corner-text) !important;
+  display: block !important;
+  position: fixed !important;
+  top: 2.8vh !important; /* Position relative to the viewport height */
+  left: 0.3vw !important; /* Move to the left side */
+  padding: 0.5vh 0.5vw; /* Padding that adjusts with window size */
+  font-family: var(--font) !important;
+  font-size: 0.55vw !important; /* Font size scales with viewport width */
+  font-weight: 900 !important;
+  color: hsla(195, 100%, 99%, 0.399) !important;
+  background-color: transparent !important; /* Keep it transparent */
+  z-index: 9999 !important; /* Keep it on top */
+  text-shadow: 0 0 1vw rgba(255, 255, 255, 0.6); /* Faint glow with vw for scalability */
+}
+
+
+.platform-osx .wrapper_ef3116 {
+  margin-top: 0px !important;
+}

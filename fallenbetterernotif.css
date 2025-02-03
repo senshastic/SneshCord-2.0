@@ -1,0 +1,54 @@
+/* Snake animation with pastel rainbow effect */
+div.pill_e5445c:has(span[style="opacity: 1; height: 8px; transform: none;"])+div>div[data-dnd-name="FallenWorld"] {
+    position: relative;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1;
+    overflow: hidden;
+    color: white;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.pill_e5445c:has(span[style="opacity: 1; height: 8px; transform: none;"])+div>div[data-dnd-name="FallenWorld"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    padding: 10px;
+    background: linear-gradient(90deg, 
+            transparent 0%, transparent 40%, 
+            #ed005b 45%, #ff0000 48%, #ff6d00 50%, #ffea00 53%, #aeea00 56%, 
+            #00e676 59%, #00e6b3 62%, #00b0ff 65%, #2962ff 68%, #6200ea 71%, #d500f9 74%, 
+            transparent 80%, transparent 100%);
+
+
+
+
+
+
+
+    background-size: 200% 200%;
+    animation: smoothSnakeLine 6s linear infinite;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+
+@keyframes smoothSnakeLine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
+}

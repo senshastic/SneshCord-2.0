@@ -1,0 +1,134 @@
+#app-mount {
+    background             :
+      url("https://github.com/senshastic/fallsha-zen-mods/blob/main/assets/stardust.png?raw=true"),
+      var(--gradient1),
+      linear-gradient(120deg, rgba(15, 25, 50, 0.4) 0%, rgba(25, 60, 100, 0.4) 50%, rgba(50, 10, 80, 0.4) 100%) !important;
+  }
+
+  :root {
+    --arrowpanel-background               : transparent !important;
+    --theme-arrowpanel-background         : transparent !important;
+    --toolbar-field-focus-background-color: transparent !important;
+    --in-content-page-background          : transparent !important;
+    --input-bgcolor                       : transparent !important;
+    --input-border-color                  : rgba(208, 181, 117, 0.5) !important;
+    --arrowpanel-background               : transparent !important;
+    --toolbar-field-focus-background-color: transparent !important;
+    --in-content-page-background          : transparent !important;
+    --input-bgcolor                       : transparent !important;
+    --input-border-color                  : rgba(208, 181, 117, 0.5) !important;
+    --panel-separator-color               : #d0b575 !important;
+    --panel-item-active-bgcolor           : transparent !important;
+    -moz-menuhover                        : transparent !important;
+    --button-hover-bgcolor                : transparent !important;
+    --swipe-nav-icon-accent-color         : transparent !important;
+    --swipe-nav-icon-primary-color        : transparent !important;
+    --gradient1                           : linear-gradient(109.6deg,
+        rgba(8, 19, 54, 0.95) 0%,
+        rgba(26, 58, 102, 0.95) 25%,
+        rgba(43, 1, 91, 0.95) 50%,
+        rgba(122, 2, 54, 0.95) 100%);
+    --gradient2: linear-gradient(109.6deg,
+        rgba(1, 1, 30, 0.95) 0%,
+        rgba(5, 1, 21, 0.95) 25%,
+        rgba(26, 26, 43, 0.95) 50%,
+        rgba(0, 0, 35, 0.95) 100%);
+    --gradient3: linear-gradient(109.6deg,
+        rgba(8, 19, 54, 0.95) 0%,
+        rgba(26, 58, 102, 0.95) 25%,
+        rgba(43, 1, 91, 0.95) 50%,
+        rgba(122, 2, 54, 0.95) 100%);
+    --gradient4: linear-gradient(109.6deg,
+        rgba(8, 19, 54, 0.95) 0%,
+        rgba(26, 58, 102, 0.95) 25%,
+        rgba(43, 1, 91, 0.95) 50%,
+        rgba(122, 2, 54, 0.95) 100%);
+  }
+
+:root{
+    --background-tertiary: transparent !important;
+    --background-primary: transparent !important;
+    --background-secondary: transparent !important;
+    --channeltextarea-background: transparent !important;  
+    --background-secondary-alt: transparent !important;
+    --bg-3: transparent !important;
+}
+
+.chatContent_f75fb0,
+.themedBackground__74017,
+.members_c8ffbb,
+.itemCard__7e549,
+#popout_7108,
+.vc-addon-card, 
+.c {
+        background-color: rgba(5, 5, 5, .18) !important;
+		border-radius: 12px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		padding: 5px;
+}
+
+.sidebar_c48ade,
+.content_f75fb0,
+.DraftEditor-editorContainer {
+    background-color: rgba(5, 5, 5, .18) !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px) saturate(110%);
+    -webkit-backdrop-filter: blur(100px);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 5px;
+    border               : 1px solid rgba(208, 181, 117, 0.5) !important;
+box-shadow           :
+  inset 0 0 12px rgba(255, 255, 255, 0.35),
+  inset 0 0 20px rgba(255, 255, 255, 0.20) !important;
+}
+
+
+.jumpToPresentBar__0f481,
+.wrapper_ef3116,
+.container__37e49,
+.header_fed6d3 {
+    background-color: rgba(5, 5, 5, .18) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px) saturate(110%);
+    -webkit-backdrop-filter: blur(100px);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.subtitleContainer_f75fb0{
+    background-color: rgba(5, 5, 5, .18) !important;
+}
+
+.flex__7c0ba,
+.container_a45028 {
+    background-color: transparent !important; 
+}
+
+.container__34c2c{
+    background             :
+      url("https://github.com/senshastic/fallsha-zen-mods/blob/main/assets/stardust.png?raw=true"),
+      var(--gradient1),
+      linear-gradient(120deg, rgba(15, 25, 50, 0.4) 0%, rgba(25, 60, 100, 0.4) 50%, rgba(50, 10, 80, 0.4) 100%) !important;
+    background-attachment: fixed, fixed, fixed !important;
+    background-size      : 200px, cover, cover !important;
+    color                : inherit !important;
+    border-radius        : 12px !important;
+    border               : 1px solid rgba(208, 181, 117, 0.5) !important;
+    box-shadow           :
+      inset 0 0 12px rgba(255, 255, 255, 0.35),
+      inset 0 0 20px rgba(255, 255, 255, 0.20) !important;
+    overflow  : unset !important;
+    z-index   : 9999 !important;
+    opacity   : 0.99 !important;
+    /* Slightly reduced transparency for clarity */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#app-mount .searchFilter_bd8186,
+#app-mount .searchAnswer_bd8186 {
+    background-color: transparent !important; 
+}
