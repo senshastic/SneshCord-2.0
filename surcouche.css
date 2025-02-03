@@ -72,7 +72,6 @@
 
 .sidebar_c48ade,
 .content_f75fb0,
-.DraftEditor-editorContainer,
 .inner_ab8609 {
     background-color: rgba(5, 5, 5, .18) !important;
     border-radius: 12px;
@@ -87,6 +86,19 @@ box-shadow           :
   inset 0 0 20px rgba(255, 255, 255, 0.20) !important;
 }
 
+.DraftEditor-editorContainer{
+    background-color: rgba(5, 5, 5, .18) !important;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px) saturate(110%);
+    -webkit-backdrop-filter: blur(100px);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    padding: 0px;
+    border               : 1px solid rgba(208, 181, 117, 0.5) !important;
+box-shadow           :
+  inset 0 0 12px rgba(255, 255, 255, 0.35),
+  inset 0 0 20px rgba(255, 255, 255, 0.20) !important;
+}
 
 .jumpToPresentBar__0f481,
 .wrapper_ef3116,
