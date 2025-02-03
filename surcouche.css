@@ -72,7 +72,8 @@
 
 .sidebar_c48ade,
 .content_f75fb0,
-.DraftEditor-editorContainer {
+.DraftEditor-editorContainer,
+.inner_ab8609 {
     background-color: rgba(5, 5, 5, .18) !important;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -104,7 +105,8 @@ box-shadow           :
 }
 
 .flex__7c0ba,
-.container_a45028 {
+.container_a45028,
+.outer_ab8609 {
     background-color: transparent !important; 
 }
 
