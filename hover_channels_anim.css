@@ -8,8 +8,13 @@
 .wrapper__2ea32:hover .link__2ea32,
 .side_b3f026 .item_b3f026:hover {
     margin-left: 10px;
+    background-color: rgba(5, 5, 5, .18) !important;
+    backdrop-filter: blur(150px) !important; 
+    box-shadow: inset 0px 2px 0px 0px #00000020, inset 0px 2px 8px 0px #00000040 !important;
 }
 .membersWrap_c8ffbb .container__91a9d:hover,
 .channel__972a0:hover {
     margin-left: 18px;
+    
+    
 }

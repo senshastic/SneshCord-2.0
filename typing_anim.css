@@ -38,10 +38,14 @@
           transform: translateX(var(--scb-applauncher-padding));
         }
         [class^="typingDots_"] {
-          background-color: var(--channeltextarea-background);
-          border-radius: var(--scb-border-radius) var(--scb-border-radius) 0px 0px;
           padding-right: 7.5px;
-          color: red !important;
+          background-color: rgba(5, 5, 5, .45) !important;
+          border-radius: 12px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(100px) saturate(110%);
+          -webkit-backdrop-filter: blur(100px);
+          transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+          padding: 5px;
         }
       }
       [class^="channelTextArea_"] {
